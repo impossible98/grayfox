@@ -12,6 +12,6 @@ func InitServer() {
 	router := gin.Default()
 	router.Use(cors.Default())
 	router.GET("/api", api.API)
-	router.GET("/api/version", api.API)
+	router.GET("/api/version", api.Version)
 	router.Run()
 }
